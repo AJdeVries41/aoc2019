@@ -1,10 +1,10 @@
 
+
+from copy import copy
+
 """
 It is assumed a valid intcode program is given to this function
 """
-from copy import copy
-
-
 def interp_intcode(prog: list[int], verb=-1, noun=-1):
     if verb != -1:
         prog[1] = verb

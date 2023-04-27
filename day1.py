@@ -2,7 +2,7 @@ import math
 
 
 def fuel_recursive(mass: int) -> int:
-    additional_fuel = math.floor(mass/3)-2
+    additional_fuel = (mass//3)-2
     if (additional_fuel <= 0):
         return 0
     else:
@@ -10,7 +10,7 @@ def fuel_recursive(mass: int) -> int:
 
 
 def part_one(lines: list[int]) -> int:
-    return sum(map(lambda i: math.floor(i/3)-2, lines))
+    return sum(map(lambda i: (i//3)-2, lines))
 
 
 def part_two(integer_input):
