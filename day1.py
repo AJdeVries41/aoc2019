@@ -1,6 +1,5 @@
 import math
 
-
 def fuel_recursive(mass: int) -> int:
     additional_fuel = (mass//3)-2
     if (additional_fuel <= 0):
